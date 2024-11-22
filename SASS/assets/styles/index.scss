@@ -1,0 +1,28 @@
+nav {
+    background: pink;
+    border-radius: 10px;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+header {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        &::after {
+            content: "*";
+            position: absolute;
+            transform: translateY(-6PX);
+            color: pink;
+        }
+    }
+}
