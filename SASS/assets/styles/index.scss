@@ -1,28 +1,9 @@
-nav {
-    background: pink;
-    border-radius: 10px;
+// index.scss ressemble tous les fichiers sass
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 40px;
-
-        li {
-            list-style: none;
-        }
-    }
-}
-
-header {
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-        &::after {
-            content: "*";
-            position: absolute;
-            transform: translateY(-6PX);
-            color: pink;
-        }
-    }
-}
+// settings.scss doit être lu en premier pour que sass connaisse les variables
+@import "./settings";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
+@import "./components/buttons";

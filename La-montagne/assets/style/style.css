@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 body {
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   list-style: none;
   background: url("../images/bg.jpg") fixed center;
   background-size: cover;
@@ -19,27 +19,26 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90vh;
+  height: 92vh;
   width: 100%;
 }
-
-.header-container {
+header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 700px;
 }
-.header-container h1 {
+header .header-container h1 {
   font-family: "Inter";
   text-transform: uppercase;
   font-weight: 800;
@@ -48,8 +47,119 @@ header {
   word-spacing: 1rem;
   color: rgb(248, 245, 245);
 }
-.header-container p {
+header .header-container p {
   color: rgb(248, 245, 245);
   font-family: "Merriweather";
   font-style: italic;
+}
+header .header-container i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+#content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+}
+#content nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  height: 100%;
+  background: rgba(238, 236, 236, 0.301);
+}
+#content nav .nav-container .navigation-container {
+  width: 70%;
+  height: 100%;
+}
+#content nav .nav-container .navigation-container ul {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#content nav .nav-container .navigation-container ul li {
+  height: 100%;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  color: rgb(243, 242, 242);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#content nav .nav-container .navigation-container ul li:hover {
+  background: rgb(243, 243, 243);
+  color: rgb(10, 10, 10);
+}
+#content nav .nav-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+}
+#content nav .nav-container .social-container ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+#content nav .nav-container .social-container ul li {
+  list-style: none;
+  color: rgb(250, 249, 249);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content nav .nav-container .social-container ul li:hover {
+  color: rgb(17, 92, 190);
+}
+#content .intro {
+  background: rgb(236, 236, 236);
 }/*# sourceMappingURL=style.css.map */
