@@ -88,6 +88,11 @@
           outline: none;
           border: none;
           border-bottom: 1px solid $grey;
+          cursor: pointer;
+          &:hover {
+            color: $color1 ;
+            border-bottom: 1px solid $color1;
+          }
         }
       }
       button {
@@ -103,7 +108,10 @@
 
         &:hover {
           transform: translateX(3px);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
+          // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.433);
+          border: 2px solid $black;
+          color: $color1;
+          background: $white;
         }
       }
     }
